@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+
+  width: 500px;
+  height: 370px;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 20px;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  color: hsl(228, 12%, 48%);
+  font-size: 15p;
+  font: weight 6px;
+  letter-spacing: 0.2rem;
+}
+.title2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 26px;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 15px;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+.price {
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+  font-weight: 800;
+  font-style: normal;
+  color: hsl(158, 36%, 37%);
+}
+.cart {
+  font-family: "Fraunces", serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  background-color: hsl(158, 83%, 16%);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: small;
+  margin: 15px;
+}
+.img-desk {
+  border-radius: 8px 0px 0px 8px;
+}
+.image-mobile {
+  display: none;
+}
+
+.prix {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+.a-price {
+  text-decoration: line-through;
+  color: hsl(160, 2%, 64%);
+  font-size: small;
+}
+/*Version responsive pour mobile */
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+    align-items: flex-start;
+  }
+
+  div.card {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+  .image-mobile {
+    display: block;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .img-desk {
+    display: none;
+  }
+
+  .container {
+    padding: 15px;
+  }
+  .title {
+    margin-bottom: 15px;
+    padding-top: 10px;
+  }
+  .title2 {
+    font-size: 30px;
+  }
+
+  .prix {
+    font-size: 30px;
+  }
+
+  .cart {
+    width: 80%;
+  }
+  .text {
+    font-size: medium;
+  }
+}
